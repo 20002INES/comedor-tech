@@ -2,16 +2,73 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>COMEDOR-TECH</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMEDOR-TECH - Control de Acceso</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <h1>COMEDOR-TECH</h1>
 
-    <nav>
-        <a href="login.html">Login</a>
-        <a href="acceso.html">Control de Acceso</a>
-    </nav>
+    <div class="barra-navegador">
+        <span class="btn-nav"></span>
+        <span class="btn-nav"></span>
+        <span class="btn-nav"></span>
+        <input type="text" value="www.comedoruniversitario.edu.pe/acceso" readonly>
+    </div>
 
-    <p>Sistema de control de acceso para el comedor universitario.</p>
+    <main class="contenedor">
+
+        <header class="encabezado">
+            <div class="logo"></div>
+
+            <h1>COMEDOR-TECH</h1>
+
+            <nav class="menu">
+                <a href="reserva.html">Reserva</a>
+                <a href="index.html">Control Ticket</a>
+                <a href="login.html">Salir Acceso</a>
+            </nav>
+        </header>
+
+        <section class="lector-ticket">
+            <label for="ticket">Escanee Código de Barras / QR del Ticket:</label>
+            <input type="text" id="ticket" value="TICKET-221045-2026">
+            <button onclick="validarEntrada()">Validar Entrada</button>
+        </section>
+
+        <section class="tabla-datos">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Código Estudiante</th>
+                        <th>Nombres y Apellidos</th>
+                        <th>Turno Reservado</th>
+                        <th>Estado de Ticket</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>221045</td>
+                        <td>Julio Cesar Lloclli</td>
+                        <td>Turno 1 (11:30 AM)</td>
+                        <td id="estado-ticket">✓ VÁLIDO - SIN SERVIR</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="mensaje-acceso">
+            <p id="mensaje">
+                ✓ CONTROL DE ACCESO EXITOSO: Permita el ingreso del comensal y entregue la bandeja de alimentos.
+            </p>
+        </section>
+
+        <button class="btn-servido" onclick="registrarServido()">
+            💾 REGISTRAR COMO ATENDIDO / SERVIDO
+        </button>
+
+    </main>
+
+    <script src="js/app.js"></script>
 </body>
 </html>

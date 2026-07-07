@@ -1,0 +1,302 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #eeeeee;
+    color: #222;
+}
+
+/* Barra superior tipo navegador */
+.barra-navegador {
+    width: 900px;
+    margin: 0 auto;
+    padding: 8px;
+    background: #dcdcdc;
+    border: 2px solid #444;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.btn-nav {
+    width: 14px;
+    height: 14px;
+    background: #aaa;
+    border: 1px solid #333;
+    border-radius: 50%;
+}
+
+.barra-navegador input {
+    flex: 1;
+    padding: 7px;
+    border: 1px solid #333;
+    background: #f8f8f8;
+}
+
+/* Contenedor principal */
+.contenedor {
+    width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f7f7f7;
+    border-left: 2px solid #444;
+    border-right: 2px solid #444;
+    border-bottom: 2px solid #444;
+}
+
+/* Encabezado */
+.encabezado {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #555;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    border: 3px solid #444;
+    background: #e9e9e9;
+    margin-right: 15px;
+}
+
+.encabezado h1 {
+    font-size: 30px;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.menu {
+    margin-left: auto;
+    display: flex;
+    gap: 8px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #111;
+    background: #cfcfcf;
+    border: 2px solid #444;
+    padding: 8px 12px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Lector */
+.lector-ticket {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.lector-ticket label {
+    font-weight: bold;
+}
+
+.lector-ticket input {
+    width: 300px;
+    padding: 9px;
+    border: 2px solid #555;
+    background: white;
+}
+
+.lector-ticket button,
+.btn-servido,
+.ventana-login button {
+    padding: 10px 20px;
+    border: 2px solid #444;
+    background: #c6c6c6;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.lector-ticket button:hover,
+.btn-servido:hover,
+.ventana-login button:hover {
+    background: #b0b0b0;
+}
+
+/* Tabla */
+.tabla-datos {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th {
+    background: #d5d5d5;
+    font-weight: bold;
+}
+
+th, td {
+    border: 2px solid #444;
+    padding: 12px;
+    text-align: left;
+}
+
+/* Mensaje */
+.mensaje-acceso {
+    margin-top: 20px;
+    border: 2px solid #999;
+    background: #dedede;
+    padding: 12px;
+    font-weight: bold;
+}
+
+.mensaje-acceso p {
+    margin: 0;
+}
+
+.btn-servido {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+/* LOGIN */
+.pagina-login {
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ventana-login {
+    width: 360px;
+    background: #f7f7f7;
+    border: 3px solid #444;
+    padding: 30px;
+    text-align: center;
+}
+
+.icono-login {
+    width: 55px;
+    height: 55px;
+    border: 2px solid #444;
+    margin: 0 auto 15px;
+    font-size: 35px;
+    line-height: 48px;
+    color: #555;
+}
+
+.ventana-login h2 {
+    margin-bottom: 20px;
+}
+
+.ventana-login form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ventana-login label {
+    text-align: left;
+    font-weight: bold;
+}
+
+.ventana-login input {
+    padding: 9px;
+    border: 2px solid #555;
+}
+
+.texto-ayuda {
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+.link-volver {
+    display: inline-block;
+    margin-top: 10px;
+    color: #111;
+    font-weight: bold;
+}
+
+/* RESERVA */
+.formulario-reserva {
+    border: 2px solid #444;
+    background: #f2f2f2;
+    padding: 20px;
+}
+
+.formulario-reserva h2 {
+    margin-top: 0;
+    border-bottom: 2px solid #555;
+    padding-bottom: 10px;
+}
+
+.fila-formulario {
+    margin-bottom: 15px;
+}
+
+.fila-formulario label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.fila-formulario input,
+.fila-formulario select {
+    width: 100%;
+    padding: 9px;
+    border: 2px solid #555;
+}
+
+.opciones-turno {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.opciones-turno label {
+    font-weight: normal;
+    border: 1px solid #555;
+    padding: 8px;
+    background: white;
+}
+
+.mensaje-ticket {
+    margin-top: 15px;
+    padding: 10px;
+    background: #dedede;
+    border: 2px solid #777;
+    font-weight: bold;
+}
+
+/* Responsive básico */
+@media (max-width: 950px) {
+    .barra-navegador,
+    .contenedor {
+        width: 100%;
+    }
+
+    .encabezado {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .menu {
+        margin-left: 0;
+        flex-wrap: wrap;
+    }
+
+    .lector-ticket {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .lector-ticket input {
+        width: 100%;
+    }
+}
